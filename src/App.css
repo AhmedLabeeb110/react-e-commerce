@@ -1,38 +1,42 @@
-.App {
+@import "~antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.logo {
+  font-family: "Lobster", cursive;
+  font-size: 23px;
+  top: -9px;
+}
+
+.navCol {
+  background-color: #000;
+  color: #fff;
   text-align: center;
+  height: 6vh;
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#navColItems :hover {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*Work on the videro effects*/
+.hero-video video {
+  margin-bottom: -11px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/*Make everything responsice after completing other parts of the app*/
+@media (max-width: 1024px) {
+  .navIM {
+    display: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .logo {
+    top: -17px;
+    font-size: 20px;
   }
 }
