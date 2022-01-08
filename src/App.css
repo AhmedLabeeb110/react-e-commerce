@@ -22,12 +22,30 @@
   cursor: pointer;
 }
 
-/*Work on the videro effects*/
 .hero-video video {
   margin-bottom: -11px;
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+.hero-buttom{
+  background-color: #fff;
+  color: #2c2c2c;
+  border: #fff;
+  width: 225px;
+  height: 80px;
+  bottom: 650px;
+  left: 845px;
+  font-family: "Lobster", cursive;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.hero-buttom:hover{
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 /*Make everything responsice after completing other parts of the app*/
